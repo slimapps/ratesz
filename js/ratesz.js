@@ -186,11 +186,11 @@
 
     $.fn.ratesz = function(option){
         var options = $.extend({}, $.fn.rateszDefaults, option);
-        options.link('https://raw.githubusercontent.com/slimapps/ratesz/main/css/ratesz.css', 'rateszLink');
+        options.link('../css/ratesz.css', 'rateszLink');
         if(options.type * 1 === 0){
-            options.script('https://raw.githubusercontent.com/slimapps/ratesz/main/files/iconfont/iconfont.js', 'rateszIconfontSvg');
+            options.script('../files/iconfont/iconfont.js', 'rateszIconfontSvg');
         }else{
-            options.link('https://raw.githubusercontent.com/slimapps/ratesz/main/files/iconfont/iconfont.css', 'rateszIconfontCss');
+            options.link('../files/iconfont/iconfont.css', 'rateszIconfontCss');
         }
         this.each(function(index, element) {
             options.validate();
